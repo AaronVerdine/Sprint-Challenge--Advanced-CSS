@@ -1,1 +1,38 @@
 // Mixins Here
+
+.space-img-stylz() {
+    width: 28%;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.img-border() {
+    border-radius: 10px;
+}
+
+.button-fixed () {
+    width: 220px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 85px;
+    border: 1pt solid lightgrey;
+
+}
+
+// .button:hover() {
+//     background-color: #4CAF50; /* Green */
+//     color: white;
+//   }
+
+.button-parametric(@text-align, @border-radius) {
+    text-align: @text-align;
+    border-radius: @border-radius;
+}
+
+.button-parametric-background (@background, @font-size, @color, @padding-top) {
+    background: @background;
+    font-size: @font-size;
+    color: @color;
+    padding-top: @padding-top;
+}
